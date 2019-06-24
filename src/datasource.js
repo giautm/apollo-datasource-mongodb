@@ -32,6 +32,10 @@ class MongoDataSource extends DataSource {
     })
     Object.assign(this, methods)
   }
+  
+  collection() {
+    return this[this.collectionName]
+  }
 }
 
 export { MongoDataSource }
